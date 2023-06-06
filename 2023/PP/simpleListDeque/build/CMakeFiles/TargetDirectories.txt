@@ -1,0 +1,3 @@
+/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/build/CMakeFiles/deque.dir
+/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/build/CMakeFiles/edit_cache.dir
+/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/build/CMakeFiles/rebuild_cache.dir

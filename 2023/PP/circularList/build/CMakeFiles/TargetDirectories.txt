@@ -1,0 +1,3 @@
+/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/CMakeFiles/main.dir
+/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/CMakeFiles/edit_cache.dir
+/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/CMakeFiles/rebuild_cache.dir

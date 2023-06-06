@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/build",
+  "command": "/usr/bin/g++  -I/Deque/include -I/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/Deque/include -I/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/Deque/src -O3 -DNDEBUG -std=gnu++14 -o CMakeFiles/deque.dir/main.cpp.o -c /home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/main.cpp",
+  "file": "/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/main.cpp"
+},
+{
+  "directory": "/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/build",
+  "command": "/usr/bin/g++  -I/Deque/include -I/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/Deque/include -I/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/Deque/src -O3 -DNDEBUG -std=gnu++14 -o CMakeFiles/deque.dir/Deque/src/Deque.cpp.o -c /home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/Deque/src/Deque.cpp",
+  "file": "/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/Deque/src/Deque.cpp"
+},
+{
+  "directory": "/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/build",
+  "command": "/usr/bin/g++  -I/Deque/include -I/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/Deque/include -I/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/Deque/src -O3 -DNDEBUG -std=gnu++14 -o CMakeFiles/deque.dir/Deque/src/Node.cpp.o -c /home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/Deque/src/Node.cpp",
+  "file": "/home/tanjerina/Documentos/CC/CC-2023/PP/simpleListDeque/Deque/src/Node.cpp"
+}
+]

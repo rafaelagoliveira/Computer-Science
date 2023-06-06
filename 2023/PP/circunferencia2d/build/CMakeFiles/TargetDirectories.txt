@@ -1,0 +1,3 @@
+/home/tanjerina/Documentos/programacao/CPP/circunferencia2d/build/CMakeFiles/circunferencia2d.dir
+/home/tanjerina/Documentos/programacao/CPP/circunferencia2d/build/CMakeFiles/edit_cache.dir
+/home/tanjerina/Documentos/programacao/CPP/circunferencia2d/build/CMakeFiles/rebuild_cache.dir
