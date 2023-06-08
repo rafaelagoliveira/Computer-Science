@@ -3,17 +3,17 @@
 
 #include "CircularList.h"
 
-template < class nodeType >
+template <class nodeType>
 Node<nodeType> *DoubleCircularList<nodeType>::getList() {
     return ptr;
 }
 
-template < class nodeType >
+template <class nodeType>
 void DoubleCircularList<nodeType>::setList(Node<nodeType> *list) {
     this->ptr = list;
 }
 
-template < class nodeType >
+template <class nodeType>
 DoubleCircularList<nodeType>::DoubleCircularList() : ptr(nullptr) {}
 
 template <class nodeType>
@@ -31,12 +31,12 @@ void DoubleCircularList<nodeType>::pushBack(nodeType data, Node<nodeType> **curr
     }
 }
 
-template < class nodeType >
+template <class nodeType>
 void DoubleCircularList<nodeType>::pushBack(nodeType data) {
     pushBack(data, &ptr);
 }
 
-template < class nodeType >
+template <class nodeType>
 void DoubleCircularList<nodeType>::popFront() {
     if (ptr != nullptr) {
         Node<nodeType> *temp = ptr;
@@ -47,7 +47,7 @@ void DoubleCircularList<nodeType>::popFront() {
     }
 }
 
-template < class nodeType >
+template <class nodeType>
 nodeType DoubleCircularList<nodeType>::front() {
     return ptr->getData();
 }

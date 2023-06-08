@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/CircularList.cpp" "CMakeFiles/main.dir/CircularList.cpp.o" "gcc" "CMakeFiles/main.dir/CircularList.cpp.o.d"
-  "/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/Node.cpp" "CMakeFiles/main.dir/Node.cpp.o" "gcc" "CMakeFiles/main.dir/Node.cpp.o.d"
-  "/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/CircularList.cpp" "CMakeFiles/main.dir/CircularList.cpp.o" "gcc" "CMakeFiles/main.dir/CircularList.cpp.o.d"
+  "/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Node.cpp" "CMakeFiles/main.dir/Node.cpp.o" "gcc" "CMakeFiles/main.dir/Node.cpp.o.d"
+  "/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Roulette.cpp" "CMakeFiles/main.dir/Roulette.cpp.o" "gcc" "CMakeFiles/main.dir/Roulette.cpp.o.d"
+  "/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

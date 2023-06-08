@@ -1,8 +1,8 @@
 CMakeFiles/main.dir/CircularList.cpp.o: \
- /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/CircularList.cpp \
+ /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/CircularList.cpp \
  /usr/include/stdc-predef.h \
- /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/CircularList.h \
- /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/Node.h \
+ /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/CircularList.h \
+ /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Node.h \
  /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -149,5 +149,5 @@ CMakeFiles/main.dir/CircularList.cpp.o: \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
- /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/Node.cpp \
- /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/CircularList.cpp
+ /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Node.cpp \
+ /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/CircularList.cpp

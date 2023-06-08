@@ -1,5 +1,5 @@
-CMakeFiles/main.dir/main.cpp.o: \
- /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/main.cpp \
+CMakeFiles/main.dir/Roulette.cpp.o: \
+ /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Roulette.cpp \
  /usr/include/stdc-predef.h \
  /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Roulette.h \
  /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/CircularList.h \

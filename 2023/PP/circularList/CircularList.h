@@ -3,7 +3,7 @@
 
 #include "Node.h"
 
-template < class nodeType = unsigned >
+template <class nodeType = unsigned>
 class DoubleCircularList {
   protected:
     Node<nodeType> *getList();

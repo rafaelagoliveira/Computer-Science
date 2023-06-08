@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/CircularList.cpp.o.d"
   "CMakeFiles/main.dir/Node.cpp.o"
   "CMakeFiles/main.dir/Node.cpp.o.d"
+  "CMakeFiles/main.dir/Roulette.cpp.o"
+  "CMakeFiles/main.dir/Roulette.cpp.o.d"
   "CMakeFiles/main.dir/main.cpp.o"
   "CMakeFiles/main.dir/main.cpp.o.d"
   "main"

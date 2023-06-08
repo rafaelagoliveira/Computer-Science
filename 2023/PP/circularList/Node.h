@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-template <class nodeType >
+template <class nodeType>
 class Node {
   private:
     nodeType data;

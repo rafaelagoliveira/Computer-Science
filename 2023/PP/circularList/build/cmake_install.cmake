@@ -1,4 +1,4 @@
-# Install script for directory: /home/tanjerina/Documentos/CC/CC-2023/PP/circularList
+# Install script for directory: /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

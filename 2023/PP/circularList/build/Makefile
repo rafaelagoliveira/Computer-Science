@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tanjerina/Documentos/CC/CC-2023/PP/circularList
+CMAKE_SOURCE_DIR = /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build
+CMAKE_BINARY_DIR = /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/CMakeFiles /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,30 @@ Node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Node.cpp.s
 .PHONY : Node.cpp.s
 
+Roulette.o: Roulette.cpp.o
+.PHONY : Roulette.o
+
+# target to build an object file
+Roulette.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Roulette.cpp.o
+.PHONY : Roulette.cpp.o
+
+Roulette.i: Roulette.cpp.i
+.PHONY : Roulette.i
+
+# target to preprocess a source file
+Roulette.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Roulette.cpp.i
+.PHONY : Roulette.cpp.i
+
+Roulette.s: Roulette.cpp.s
+.PHONY : Roulette.s
+
+# target to generate assembly for a file
+Roulette.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Roulette.cpp.s
+.PHONY : Roulette.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... Node.o"
 	@echo "... Node.i"
 	@echo "... Node.s"
+	@echo "... Roulette.o"
+	@echo "... Roulette.i"
+	@echo "... Roulette.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

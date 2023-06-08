@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tanjerina/Documentos/CC/CC-2023/PP/circularList
+CMAKE_SOURCE_DIR = /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build
+CMAKE_BINARY_DIR = /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -70,52 +70,67 @@ include CMakeFiles/main.dir/progress.make
 include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/main.cpp.o: /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/main.cpp
+CMakeFiles/main.dir/main.cpp.o: /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/main.cpp
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.o -MF CMakeFiles/main.dir/main.cpp.o.d -o CMakeFiles/main.dir/main.cpp.o -c /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.o -MF CMakeFiles/main.dir/main.cpp.o.d -o CMakeFiles/main.dir/main.cpp.o -c /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/main.cpp > CMakeFiles/main.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/main.cpp > CMakeFiles/main.dir/main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/main.cpp -o CMakeFiles/main.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
 CMakeFiles/main.dir/Node.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/Node.cpp.o: /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/Node.cpp
+CMakeFiles/main.dir/Node.cpp.o: /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Node.cpp
 CMakeFiles/main.dir/Node.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/Node.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Node.cpp.o -MF CMakeFiles/main.dir/Node.cpp.o.d -o CMakeFiles/main.dir/Node.cpp.o -c /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/Node.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Node.cpp.o -MF CMakeFiles/main.dir/Node.cpp.o.d -o CMakeFiles/main.dir/Node.cpp.o -c /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Node.cpp
 
 CMakeFiles/main.dir/Node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Node.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/Node.cpp > CMakeFiles/main.dir/Node.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Node.cpp > CMakeFiles/main.dir/Node.cpp.i
 
 CMakeFiles/main.dir/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Node.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/Node.cpp -o CMakeFiles/main.dir/Node.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Node.cpp -o CMakeFiles/main.dir/Node.cpp.s
 
 CMakeFiles/main.dir/CircularList.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/CircularList.cpp.o: /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/CircularList.cpp
+CMakeFiles/main.dir/CircularList.cpp.o: /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/CircularList.cpp
 CMakeFiles/main.dir/CircularList.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/CircularList.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/CircularList.cpp.o -MF CMakeFiles/main.dir/CircularList.cpp.o.d -o CMakeFiles/main.dir/CircularList.cpp.o -c /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/CircularList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/CircularList.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/CircularList.cpp.o -MF CMakeFiles/main.dir/CircularList.cpp.o.d -o CMakeFiles/main.dir/CircularList.cpp.o -c /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/CircularList.cpp
 
 CMakeFiles/main.dir/CircularList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/CircularList.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/CircularList.cpp > CMakeFiles/main.dir/CircularList.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/CircularList.cpp > CMakeFiles/main.dir/CircularList.cpp.i
 
 CMakeFiles/main.dir/CircularList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/CircularList.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/CircularList.cpp -o CMakeFiles/main.dir/CircularList.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/CircularList.cpp -o CMakeFiles/main.dir/CircularList.cpp.s
+
+CMakeFiles/main.dir/Roulette.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Roulette.cpp.o: /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Roulette.cpp
+CMakeFiles/main.dir/Roulette.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/Roulette.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Roulette.cpp.o -MF CMakeFiles/main.dir/Roulette.cpp.o.d -o CMakeFiles/main.dir/Roulette.cpp.o -c /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Roulette.cpp
+
+CMakeFiles/main.dir/Roulette.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/Roulette.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Roulette.cpp > CMakeFiles/main.dir/Roulette.cpp.i
+
+CMakeFiles/main.dir/Roulette.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/Roulette.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/Roulette.cpp -o CMakeFiles/main.dir/Roulette.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
 "CMakeFiles/main.dir/Node.cpp.o" \
-"CMakeFiles/main.dir/CircularList.cpp.o"
+"CMakeFiles/main.dir/CircularList.cpp.o" \
+"CMakeFiles/main.dir/Roulette.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -123,9 +138,10 @@ main_EXTERNAL_OBJECTS =
 main: CMakeFiles/main.dir/main.cpp.o
 main: CMakeFiles/main.dir/Node.cpp.o
 main: CMakeFiles/main.dir/CircularList.cpp.o
+main: CMakeFiles/main.dir/Roulette.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +153,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tanjerina/Documentos/CC/CC-2023/PP/circularList /home/tanjerina/Documentos/CC/CC-2023/PP/circularList /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build /home/tanjerina/Documentos/CC/CC-2023/PP/circularList/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build /home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 
