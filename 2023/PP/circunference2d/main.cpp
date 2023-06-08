@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 #include "Circunference.h"
 
 int main(int, char**) {
@@ -9,6 +8,8 @@ int main(int, char**) {
     c1.setRadius(1);
     c2.setPosition(7, 1);
     c2.setRadius(2);
+
+    std::cout << "Distancia entre circunferencias: " << c1.distance(c2) << std::endl;
 
     return 0;
 }
