@@ -1,32 +1,9 @@
 #include <iostream>
 
-template <class T>
-// class Matrix {
-//   private:
-//     T *bigArray;
-//     unsigned n;
-
-//   public:
-//     Matrix() : n(3), bigArray(new T[n * n]) {}
-
-//     explicit Matrix(unsigned n) : n(n), bigArray(new T[n * n]) {}
-
-//     ~Matrix() {
-//         delete[] bigArray;
-//     }
-
-//     T getElement(unsigned i, unsigned j) const {
-//         return bigArray[i * n + j];
-//     }
-
-//     void setElement(unsigned i, unsigned j, T value) {
-//         bigArray[i * n + j] = value;
-//     }
-// };
-
+template <class Type>
 class Matrix {
   private:
-    T **bigArray;
+    Type **bigArray;
     unsigned n;
 
   public:
@@ -49,11 +26,11 @@ class Matrix {
         delete[] bigArray;
     }
 
-    T getElement(unsigned i, unsigned j) const {
+    Type getElement(unsigned i, unsigned j) const {
         return bigArray[i][j];
     }
 
-    void setElement(unsigned i, unsigned j, T value) {
+    void setElement(unsigned i, unsigned j, Type value) {
         bigArray[i][j] = value;
     }
 
