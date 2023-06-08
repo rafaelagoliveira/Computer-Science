@@ -1,3 +1,0 @@
-/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles/main.dir
-/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles/edit_cache.dir
-/home/tanjerina/Documentos/Programacao/GitHub/Computer-Science/2023/PP/circularList/build/CMakeFiles/rebuild_cache.dir
