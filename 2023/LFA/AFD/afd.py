@@ -1,153 +1,186 @@
 """
-Autômato finito determinístico
+Deterministic Finite Automaton (DFA) - Word Verifier
+
+The code implements an interactive program that allows the creation and
+verification of words with respect to a Deterministic Finite Automaton (DFA).
+
+Format: Flake8
 """
 
 
-def ler_alfabeto():
+def read_alphabet():
     """
-    Ler o alfabeto
-    """
-
-    alfabeto = input('\nEntre com o alfabeto: ')
-    return alfabeto.split(',')
-
-
-def ler_numero_estados():
-    """
-    Ler os estados
+    Prompts the user to enter the alphabet separated by commas and returns a list of alphabet symbols.
     """
 
-    estados = input('Entre com os estados: ')
-    return estados.split(',')
+    alphabet = input('\nEnter the alphabet: ')
+    return alphabet.split(',')
 
 
-# Lê o estado inicial
-def ler_estado_inicial(estados):
+def read_states():
     """
-    Ler o estado inicial
+    Prompts the user to enter the states separated by commas and returns a list of states.
     """
 
-    while True:
-        estado = input('Entre com o estado inicial: ')
-        if estado in estados:
-            return estado
-        print('Digite um estado válido.')
+    states = input('Enter the states: ')
+    return states.split(',')
 
 
-def ler_estados_finais(estados):
+def read_initial_state(states):
     """
-    Ler os estados finais
+    Prompts the user to enter the initial state and checks if it is present in the list of states.
+    Returns the initial state.
     """
 
     while True:
-        estados_input = input('Entre com os estados de aceitação: ')
-        estados_input = estados_input.split(',')
-        if all(estado in estados for estado in estados_input):
-            return estados_input
-        print('Digite estados válidos.')
+        state = input('Enter the initial state: ')
+        if state in states:
+            return state
+        print('Enter a valid state.')
 
 
-def ler_tabela_transicao(estados, alfabeto):
+def read_accepting_states(states):
     """
-    Ler a tabela de transição
+    Prompts the user to enter the accepting states separated by commas and checks if all the provided states
+    are present in the list of states.
+    Returns a list of accepting states.
     """
 
-    tabela = {}
+    while True:
+        states_input = input('Enter the accepting states: ')
+        states_input = states_input.split(',')
+        if all(state in states for state in states_input):
+            return states_input
+        print('Enter valid states.')
 
-    for estado in estados:
-        # Cria um dicionário vazio para cada estado na tabela de transição
-        tabela[estado] = {}
-        for simbolo in alfabeto:
+
+def read_transition_table(states, alphabet):
+    """
+    Prompts the user to enter the transitions for each state and alphabet symbol of the automaton.
+    Checks if the transitions are valid states or '-' to represent the absence of a transition.
+    Returns a transition table represented by a dictionary.
+    """
+
+    table = {}
+
+    for state in states:
+        table[state] = {}
+        for symbol in alphabet:
             while True:
-                # Lê as transições para cada par estado-símbolo
-                transicao = input(f'Delta({estado},{simbolo}): ')
-                if transicao == '-' or transicao in estados:
-                    # Verifica se o estado de transição é válido ou se é '-' para representar ausência de transição
-                    tabela[estado][simbolo] = transicao
+                transition = input(f'Delta({state},{symbol}): ')
+                if transition == '-' or transition in states:
+                    table[state][symbol] = transition
                     break
-                print('Digite um estado válido ou "-" para representar a ausência de transição.')
-    return tabela
+
+    return table
 
 
-def verificar_palavra_valida(palavra, alfabeto):
+def verify_valid_word(word, alphabet):
     """
-    Verificar se a palavra é válida
+    Verifies if all symbols in the word are present in the provided alphabet.
+    Returns True if the word is valid, and False otherwise.
     """
-    for simbolo in palavra:
-        # Verifica se cada símbolo da palavra pertence ao alfabeto
-        if simbolo not in alfabeto:
+
+    for symbol in word:
+        if symbol not in alphabet:
             return False
+
     return True
 
 
-def verificar_aceitacao(palavra, tabela, estados_finais, estado_inicial):
+def verify_acceptance(word, transition_table, accepting_states, initial_state):
     """
-    Verificar aceitação da palavra
+    Verifies if the word is accepted by the deterministic automaton.
+    Uses the transition table, accepting states, and initial state to simulate the word processing.
+    Returns True if the word is accepted, False if it is rejected, and None if processing is not possible.
     """
-    estado_atual = estado_inicial
 
-    for simbolo in palavra:
-        if estado_atual not in tabela or simbolo not in tabela[estado_atual]:
-            # Verifica se há uma transição definida para o estado atual e símbolo atual
+    current_state = initial_state
+
+    for symbol in word:
+        if current_state not in transition_table or symbol not in transition_table[current_state]:
             return False
-        estado_atual = tabela[estado_atual][simbolo]
-        if estado_atual == '-':
-            # Verifica se a transição leva ao estado '-' que representa ausência de transição
+        current_state = transition_table[current_state][symbol]
+        if current_state == '-':
             return None
 
-    return estado_atual in estados_finais
+    return current_state in accepting_states
+
+
+def print_transition_table(alphabet, states, transition_table):
+    """
+    Prints the transition table formatted with alphabet symbols and states.
+    """
+
+    print('   ', end='')
+    for symbol in alphabet:
+        print(symbol, end='  ')
+    print()
+
+    for state in states:
+        print(f'{state}|', end='')
+        for symbol in alphabet:
+            if symbol in transition_table[state]:
+                print(f' {transition_table[state][symbol]} ', end='')
+        print()
+
+
+def run_verification(alphabet, transition_table, accepting_states, initial_state):
+    """
+    Executes the word verification loop.
+    Prompts the user to enter a word to be verified by the automaton.
+    Performs the verification and displays the result.
+    Allows the user to choose whether to enter a new word, a new automaton, or exit the program.
+    Returns the chosen option.
+    """
+
+    repeat = 1
+
+    while repeat == 1:
+        word = input('\nEnter the word to be verified: ')
+        if not verify_valid_word(word, alphabet):
+            print('Word contains invalid symbols.')
+        else:
+            verifier = verify_acceptance(word, transition_table, accepting_states, initial_state)
+            if verifier:
+                print('\nSuccess!')
+            elif verifier is None:
+                print('\nThe DFA is unable to process the provided word.')
+            elif verifier is False:
+                print('\nWord not recognized!')
+
+        while True:
+            try:
+                repeat = int(input('\n1 - New word\n2 - New automaton\n3 - Exit\n--> '))
+                if repeat < 1 or repeat > 3:
+                    raise ValueError
+                break
+            except ValueError:
+                print('Invalid input. Please enter a valid value.')
+
+    return repeat
 
 
 def main():
     """
-    Funcão main
+    Main function that controls the program flow.
+    Performs the reading of the alphabet, states, initial state,
+    accepting states, and transition table.
+    Prints the transition table and executes the word verification.
+    Repeats the process until the user chooses to exit the program.
     """
 
-    repetir = 0
+    repeat = 0
 
-    while repetir <= 2:
-        alfabeto = ler_alfabeto()
-        estados = ler_numero_estados()
-        estado_inicial = ler_estado_inicial(estados)
-        estados_finais = ler_estados_finais(estados)
-        tabela = ler_tabela_transicao(estados, alfabeto)
+    while repeat <= 2:
+        alphabet = read_alphabet()
+        states = read_states()
+        initial_state = read_initial_state(states)
+        accepting_states = read_accepting_states(states)
+        transition_table = read_transition_table(states, alphabet)
 
-        print('   ', end='')
-        for simbolo in alfabeto:
-            print(simbolo, end='  ')
-        print()
-
-        for estado in estados:
-            print(f'{estado}|', end='')
-            for simbolo in alfabeto:
-                if simbolo in tabela[estado]:
-                    print(f' {tabela[estado][simbolo]} ', end='')
-            print()
-
-        repetir = 1
-        while repetir == 1:
-            palavra = input('\nEntre com a palavra verificada: ')
-            if not verificar_palavra_valida(palavra, alfabeto):
-                print('Palavra possui símbolo inválido')
-            else:
-                verificador = verificar_aceitacao(palavra, tabela, estados_finais, estado_inicial)
-                if verificador:
-                    print('\nSucesso!')
-                elif verificador is None:
-                    print('\nAFD não é capaz de processar a palavra fornecida.')
-                elif verificador is False:
-                    print('\nPalavra não reconhecida!')
-
-            while True:
-                try:
-                    repetir = int(input('\n1 - Nova palavra\n2 - Novo autômato\n3 - Sair\n--> '))
-                    if repetir < 1 or repetir > 3:
-                        raise ValueError
-                    break
-                except ValueError:
-                    print('Entrada inválida. Por favor, digite um valor válido.')
-
-    print('Programa encerrado.')
+        print_transition_table(alphabet, states, transition_table)
+        repeat = run_verification(alphabet, transition_table, accepting_states, initial_state)
 
 
 if __name__ == '__main__':
