@@ -1,1 +1,0 @@
-/usr/bin/g++ -O3 -DNDEBUG CMakeFiles/simpleNodeDeque.dir/main.cpp.o CMakeFiles/simpleNodeDeque.dir/Deque/src/Deque.cpp.o CMakeFiles/simpleNodeDeque.dir/Deque/src/Node.cpp.o -o simpleNodeDeque 
